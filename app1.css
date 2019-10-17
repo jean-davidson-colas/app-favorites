@@ -1,0 +1,236 @@
+@font-face
+{
+	font-family: "pdark.ttf";
+ 	src: url("perfect_dark/pdark.ttf") format("TrueType");
+        
+}
+
+body
+{
+	background-image: url("images/pspp.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+h1
+{
+	font-family:"pdark.ttf";
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 80px;
+}
+
+ul {
+
+    font-family: 'Rock Salt', cursive;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	font-size: 30px;
+}
+ul a
+{
+  color: white;
+}
+.logo
+{
+	
+	border-radius: 10%;
+	width: 200px;
+	text-align: center;
+  margin-left: 180px;
+}
+
+.logo:hover
+{
+  margin-left: 480px;
+}
+.l1
+{
+	display: flex;
+	flex-direction:row-reverse;
+	justify-content: space-around;
+	
+	
+}
+
+
+.logo2
+{
+	
+	height: 500px;
+	width: 800px;
+	border-radius: 10%;
+	
+	
+
+}
+
+.cadre {
+  font-family: 'Rock Salt', cursive;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  position: relative;   /* pour servir de référent */
+  width: 80%;          /* largeur à ajuster suivant le besoin */
+  overflow: hidden;     /* masque les dépassements */
+  line-height: 2em;     /* pour centrage vertical */
+  }
+
+.cadre img {
+  z-index: 1;           /* image au dessus */
+  position: relative;   /* pour prise en compte z-index */
+  width: 14em;           /* largeur à ajuster suivant le besoin */
+
+
+}
+.cadre p {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  text-align: center;
+  position:absolute;   /* positionnement hors flux */
+  left: -100%;          /* décalage à gauche toute */
+  padding: 0 .25em;     /* un peu d'espace latéral */
+  color: #eee;          /* couleur du texte à ajuster suivant le besoin */
+  background: #069;     /* couleur du fond à ajuster suivant le besoin */
+  transition: all .5s; /* la transition à appliquer */
+  width: 200px;
+
+}
+.cadre:hover p {
+  left: 2em;  
+  width: 500px;          /* position égale à la largeur de l'image */
+}
+
+#cadre2
+{
+  font-family: 'Rock Salt', cursive;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#cadre3
+{
+  font-family: 'Rock Salt', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.image {
+  display: block;
+  width: 800px;
+  height: auto;
+  border-radius: 10%;
+
+}
+
+.image2 {
+  display: block;
+  width: 800px;
+  height: 800px;
+}
+
+.overlay {
+  position: absolute;
+  left: 29%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 800px;
+  height:0;
+  transition: .5s ease;
+  border-radius: 10%;
+}
+
+.overlay2 {
+  position: absolute;
+  left: 29%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 800px;
+  height:0;
+  transition: .5s ease;
+  border-radius: 10%;
+}
+
+.container:hover .overlay {
+  
+  height: 450px;
+}
+.container:hover .overlay2 {
+  
+  width: 800px;
+  height: 500px;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+section
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+footer
+{
+  font-family: 'Rock Salt', cursive;
+  margin-left: -35%;
+  text-align: center;
+  background-color:#008CBA;
+  height: 70px;width: 169%;
+}
+footer a
+{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+#anim1:hover{
+    animation: trans ;
+    animation-duration :2s;
+    animation-timing-function : ease-in-out;
+    animation-delay :0s;
+    animation-iteration-count: ; 
+    animation-fill-mode :forwards;
+}
+
+
+@keyframes trans {
+    0% {transform: scale(1, 1) rotate(0deg); }
+    60%{transform: scale(1, 1) rotate(360deg) ; }
+    90%{transform: scale(1.3, 1) rotate(360deg) ; }
+    100%{transform: scale(1.3, 1) rotate(360deg) ; }
+}
+
+
+.sec
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
